@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&family=League+Spartan:wght@700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Times New Roman", Times, Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-logo: "League Spartan", sans-serif;
+  --font-georgia: "Georgia", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#111] text-[#fff] antialiased;
+  }
+}
+
+.magazine-canvas {
+  width: min(480px, 100%);
+  aspect-ratio: 3 / 4;
+  background: #f5f5f5;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.bold-gradient-overlay {
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8));
+}
+
+.sidebar-bg {
+  background: #1a1a1a;
+}
+
+.input-bg {
+  background: #222;
+}
+
+.border-subtle {
+  border-color: #333;
+}
+
+.text-label {
+  color: #888;
+}
